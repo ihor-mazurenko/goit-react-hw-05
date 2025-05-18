@@ -1,0 +1,16 @@
+.btn {
+    height: 40px;
+    width: 100px;
+    background-color: chocolate;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input {
+    height: 30px;
+    width: 200px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}

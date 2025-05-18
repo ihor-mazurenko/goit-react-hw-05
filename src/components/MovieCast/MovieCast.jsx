@@ -4,7 +4,7 @@ import { fetchCast } from "../../services/movieServices";
 import css from './MovieCast.module.css'
 
 export default function MovieCast() {
-    const { movieId } = useParams();
+  const { movieId } = useParams();
   const [cast, setCast] = useState([]);
 
   useEffect(() => {

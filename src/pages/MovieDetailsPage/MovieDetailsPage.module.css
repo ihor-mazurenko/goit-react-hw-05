@@ -1,0 +1,19 @@
+.link {
+    display: block;
+    width: fit-content;
+    background-color: chocolate;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0px;
+}

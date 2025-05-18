@@ -3,6 +3,7 @@ import BackButton from "../../components/BackButton/BackButton";
 import { fetchMovieInfo } from "../../services/movieServices";
 import { NavLink, Outlet, useLocation, useParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
+import css from './MovieDetailsPage.module.css'
 
 export default function MovieDetailsPage() {
     const { movieId } = useParams();
@@ -24,12 +25,12 @@ export default function MovieDetailsPage() {
             <BackButton to={backLinkHref.current} />
             {isLoading && <p>Loading...</p>}
             {movieInfo && <MovieDetails movieInfo={movieInfo} />}
-            <ul>
+            <ul className={css.list}>
                 <li>
-                    <NavLink to="cast">Cast</NavLink>
+                    <NavLink className={css.link} to="cast">Cast</NavLink>
                 </li>
                 <li>
-                    <NavLink to="reviews">Reviews</NavLink>
+                    <NavLink className={css.link } to="reviews">Reviews</NavLink>
                 </li>
             </ul>
             <Outlet/>

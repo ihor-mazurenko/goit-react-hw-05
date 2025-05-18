@@ -1,4 +1,5 @@
 import { useSearchParams } from "react-router-dom";
+import css from './MovieSearch.module.css'
 
 export default function MovieSearch() {
     const [, setSearchParams] = useSearchParams();
@@ -14,8 +15,8 @@ export default function MovieSearch() {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input type="text" name="query" />
-                <button type="submit">
+                <input type="text" name="query" className={css.input } />
+                <button type="submit" className={css.btn}>
                     Search
                 </button>
             </form>
