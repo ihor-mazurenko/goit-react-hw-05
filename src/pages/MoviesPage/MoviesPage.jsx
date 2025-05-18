@@ -20,7 +20,7 @@ export default function MoviesPage() {
                 if (hasNoPoster) {
                     toast('Some movies do not have posters available');
                 }
-            } catch (error) {
+            } catch {
                 toast.error('Error searching movies');
             }
         }

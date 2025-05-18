@@ -24,3 +24,24 @@ export const fetchMovies = async query => {
     })
     return response.data.results;
 }
+
+export const fetchMovieInfo = async movieId => {
+  const response = await axios.get(`${BASE_URL}/movie/${movieId}`, options);
+  return response.data;
+};
+
+export const fetchCast = async movieId => {
+  const response = await axios.get(
+    `${BASE_URL}/movie/${movieId}/credits`,
+    options
+  );
+  return response.data.cast;
+};
+
+export const fetchReviews = async movieId => {
+  const response = await axios.get(
+    `${BASE_URL}/movie/${movieId}/reviews`,
+    options
+  );
+  return response.data.results;
+};
